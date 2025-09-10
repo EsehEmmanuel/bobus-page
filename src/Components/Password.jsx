@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 import { useState } from "react"
-const Password = () => {
-    const [pass, setPass] = useState("")
+const Password = ({password, setPassword}) => {
+   
     const [show, setShow] = useState(false)
   return (
     <Password_container>
         <Password_input
         type= {show ? 'text' : "password"}
-        value={pass}
-        onChange={(e)=>setPass(e.target.value)}
+        value={password}
+        onChange={(e)=>setPassword(e.target.value)}
         placeholder='Enter your password'
         />
         <Eye onClick={()=>setShow(!show)}>

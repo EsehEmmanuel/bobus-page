@@ -42,7 +42,7 @@ align-items: center;
     }
 `
 export const Sidebar = styled.div`
-    width: 10%;
+    width: 20%;
     height: 80vh;
     background: #e0d9d9;
     box-shadow: 0 0 10px rgba(0,0,0,0.0);
@@ -55,5 +55,12 @@ export const Sidebar = styled.div`
         cursor: pointer;
         height: 30px;
         width: 30px;
+    }
+    h2{
+       color: red;
+       cursor: pointer; 
+    }
+    .active{
+        color: yellow;
     }
 `
